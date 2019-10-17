@@ -8,3 +8,6 @@
     padding:0.7%;
     margin : 0%
 }
+.flexed{
+    display: flex;
+}
