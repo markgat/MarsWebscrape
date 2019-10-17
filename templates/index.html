@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<!--Consider grid layout of jumbotrons and cards, enhance table with bootstrap-->
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <!-- Correct css path after-->
+        <link rel="stylesheet" type="text/css" href="../static/style.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <title>Mars Overview</title>
+    </head>
+    <body>
+        <div class="jumbotron" id="centered">
+            <div>
+                <h1><text class="emphasis">Mission to Mars</text></h1>
+            </div>
+            <!--Set up href to /scrape-->
+            <a role="button" class="btn btn-primary btn-lg active" href="/scrape">Scrape New Data</a>
+        </div>
+        <span><h2 class="pad">Lastest Mars News</h2></span>
+        <span><h5 class = "pad">{{mars_data.news_title}}</h5></span>
+        <div class="pad"><p>{{mars_data.news_p}}</p>
+        </div>
+        <div class="pad flexed overflow-auto">
+            <div style=" float: right">
+                <div class="card" style="width: 30rem;">
+                    <div class="card-body">
+                        <h5 class = "pad">Current Weather on Mars</h5>
+                        <p>{{mars_data.weather}}</p>
+                    </div>
+                </div>
+                <br>
+                <div>
+                    <h5 class="pad">Mars Facts</h5>
+                    <!--Applied Jinja escape filter to render table-->
+                    {{mars_data.facts|safe}}
+                </div>
+            </div>
+            <div>
+                <h2>Featured Mars Image</h2>
+                <img src={{mars_data.featured_img}} alt="Featured Image" style="width: 60%; margin: 5px;">
+            </div>
+            <br>
+            <h2 id="centered">Mars Hemispheres</h2>
+            <hr style="margin: 15pt;">
+            <div class="container">
+                <!--Add hemisphere cards via grid-->
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="card" style="width: 34rem; margin:2%">
+                            <img class="card-img-top" src="{{mars_data.hemispheres[0].img_url}}" alt="Cerberus Hemisphere">
+                            <div class="card-body">
+                                <h5 class="card-title">{{mars_data.hemispheres[0].title}} Enhanced</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card" style="width: 34rem; margin:2%">
+                        <img class="card-img-top" src="{{mars_data.hemispheres[1].img_url}}" alt="Schiaparelli Hemisphere">
+                        <div class="card-body">
+                            <h5 class="card-title">{{mars_data.hemispheres[1].title}} Enhanced</h5>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="card" style="width: 34rem; margin:2%">
+                            <img class="card-img-top" src="{{mars_data.hemispheres[2].img_url}}" alt="Syrtis Major Hemisphere">
+                            <div class="card-body">
+                                <h5 class="card-title">{{mars_data.hemispheres[2].title}} Enhanced</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card" style="width: 34rem; margin:2%">
+                            <img class="card-img-top" src="{{mars_data.hemispheres[3].img_url}}" alt="Valles Marineris Hemisphere">
+                            <div class="card-body">
+                                <h5 class="card-title">{{mars_data.hemispheres[3].title}} Enhanced</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    </body>
+</html>
