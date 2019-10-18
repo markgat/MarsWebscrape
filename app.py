@@ -7,23 +7,27 @@ app = Flask(__name__)
 
 mongo = PyMongo(app, uri="mongodb://localhost:27017/mars_db")
 
+
+
 @app.route("/")
 def home():
-
-    mars_data = mongo.db.recent.find_one()
+    # For initial run, if db DNE
+    mars_data ={"news_title":"", "news_p":"", "featured_img":"", "weather":"", "facts":"", "hemispheres":\
+    [{"title":"","img_url":""},{"title":"","img_url":""},{"title":"","img_url":""},{"title":"","img_url":""}] }
+    # Check if db not empty
+    if mongo.db.recent.find_one() != None:
+        mars_data = mongo.db.recent.find_one()
 
     return render_template("index.html", mars_data=mars_data)
 
 @app.route("/scrape")
 def scrape():
-    # make sure to remove any existing collection
-    mongo.db.recent.drop()
 
     # Run the scrape function
     data = scrape_mars.scrape()
 
-    # update the mars_db using insert
-    mongo.db.recent.insert(data)
+    # update the mars_db using upsert
+    mongo.db.recent.update_one({}, {"$set": data}, upsert=True)
 
     # Redirect back to home page
     return redirect("/")
