@@ -1,8 +1,8 @@
 # Mars Webscraped Website
 
-![mission_to_mars](Images/mission_to_mars.png)
+Mars Website built for quick and constantly updated news, discovery, and images on mars aggregated into a single website.
 
-In this assignment, you will build a web application that scrapes various websites for data related to the Mission to Mars and displays the information in a single HTML page. The following outlines what you need to do.
+![mission_to_mars](Images/mission_to_mars.png)
 
 ## Step 1 - Scraping
 
