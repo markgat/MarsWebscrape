@@ -61,12 +61,17 @@ def scrape():
     # next up, mars weather on twitter
     url = "https://twitter.com/marswxreport?lang=en"
     browser.visit(url)
-    time.sleep(1)
+    time.sleep(5)
     soup = bs(browser.html, "lxml")
-    #find latest tweet
-    newest_tweet = soup.find("div", class_="js-tweet-text-container")
+    #find latest tweets
+    tweets = soup.find_all("div", class_="css-901oao r-jwli3a r-1qd0xha r-a023e6 r-16dba41 r-ad9z0x r-bcqeeo r-bnwqim r-qvutc0")
+    index = 0
+    newest_tweet = tweets[index].find("span").text
+    #find latest tweet that is weather related
+    while ("hPa" and "sol") not in newest_tweet:
+        index += 1
+        newest_tweet = tweets[index].find("span").text
     # isolate text and format
-    newest_tweet = newest_tweet.find("p").text
     new_isol = newest_tweet[newest_tweet.find("sol"):newest_tweet.rfind("hPa") + 3]
     mars_weather = new_isol.replace("\n", " ").capitalize()
 
