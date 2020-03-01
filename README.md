@@ -6,7 +6,7 @@ Mars website built for all-in-one constantly updated news, discovery, and images
 
 ## Getting Started
 
-###Prerequisites
+### Prerequisites
 You will need MongoDB installed if you want to run this application locally. For help installing MongoDB, visit
 ````
 https://docs.mongodb.com/manual/installation/
