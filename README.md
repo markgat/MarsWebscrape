@@ -25,12 +25,11 @@ As well as splinter using
 ````
 pip install splinter
 ````
-as well as
+and, if you are on Mac with Homebrew installed,
 ````
 brew install chromedriver
 ```` 
-if you are on Mac with Homebrew installed.
-And update the two to the latest if needed.
+Update the two to the latest if needed.
 
 
 
