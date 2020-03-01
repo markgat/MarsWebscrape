@@ -19,8 +19,7 @@ Or
 ````
 pip install splinter
 ````
- 
-\nAs well as splinter using
+  \nAs well as splinter using
 ````
 pip install splinter
 ````
