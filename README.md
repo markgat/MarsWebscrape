@@ -18,8 +18,8 @@ python -m pip install splinter
 Or
 ````
 pip install splinter
-````  
-  
+````
+<hr>
 As well as splinter using
 ````
 pip install splinter
