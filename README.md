@@ -19,6 +19,18 @@ Or
 ````
 pip install splinter
 ````
+/n/n
+As well as splinter using
+````
+pip install splinter
+````
+Or
+````
+brew install chromedriver
+```` 
+if you have on Mac with homebrew installed.
+And update the two to the latest if needed.
+
 
 
 ## Coming Soon
