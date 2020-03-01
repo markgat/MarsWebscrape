@@ -11,6 +11,15 @@ You will need MongoDB installed if you want to run this application locally. For
 ````
 https://docs.mongodb.com/manual/installation/
 ````
+Make sure to install splinter by entering the following in the command line:
+````
+python -m pip install splinter
+````
+Or
+````
+pip install splinter
+````
+
 
 ## Coming Soon
 (30/01/2020) - Working on deploying on Heroku with updated ChromeDriver to make application web-deployed and more accessible.\
