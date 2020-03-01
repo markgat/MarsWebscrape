@@ -20,7 +20,6 @@ Or
 pip install splinter
 ````
 \n
-\n
 As well as splinter using
 ````
 pip install splinter
