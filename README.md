@@ -19,9 +19,8 @@ Or
 ````
 pip install splinter
 ````
-<html>
-<hr>
-<html>
+  \
+  \
 As well as splinter using
 ````
 pip install splinter
