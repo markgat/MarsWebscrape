@@ -6,6 +6,12 @@ Mars website built for all-in-one constantly updated news, discovery, and images
 
 ## Getting Started
 
+###Prerequisites
+You will need MongoDB installed if you want to run this application locally. For help installing MongoDB, visit
+````
+https://docs.mongodb.com/manual/installation/
+````
+
 ## Coming Soon
 (30/01/2020) - Working on deploying on Heroku with updated ChromeDriver to make application web-deployed and more accessible.\
 ~~(30/01/2020) - Improve beautiful soup scraping queries(?)~~
