@@ -7,25 +7,26 @@ Mars website built for all-in-one constantly updated news, discovery, and images
 ## Getting Started
 
 ### Prerequisites
-You will need MongoDB installed if you want to run this application locally. For help installing MongoDB, visit
+1) You will need MongoDB installed if you want to run this application locally. For help installing MongoDB, visit
 ````
 https://docs.mongodb.com/manual/installation/
 ````
-Make sure to install splinter by entering the following in the command line:
+2) Make sure to install splinter by entering the following in the command line:
 ````
 python -m pip install splinter
 ````
-Or
+or
 ````
 pip install splinter
 ````
-As well as splinter using
 ````
-pip install splinter
+3) If you are on Mac with Homebrew installed, install Chromedriver using:
 ````
-and, if you are on Mac with Homebrew installed,
+brew cask install chromedriver
+```` 
+For Windows, the Chromedriver can be installed using the following link:
 ````
-brew install chromedriver
+https://chromedriver.chromium.org/downloads
 ```` 
 Update the two to the latest if needed.
 
