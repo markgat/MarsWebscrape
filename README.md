@@ -19,7 +19,6 @@ or
 ````
 pip install splinter
 ````
-````
 3) If you are on Mac with Homebrew installed, install Chromedriver using:
 ````
 brew cask install chromedriver
