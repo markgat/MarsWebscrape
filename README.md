@@ -13,10 +13,6 @@ https://docs.mongodb.com/manual/installation/
 ````
 2) Make sure to install splinter by entering the following in the command line:
 ````
-python -m pip install splinter
-````
-or
-````
 pip install splinter
 ````
 3) If you are on Mac with Homebrew installed, install Chromedriver using:
@@ -27,7 +23,11 @@ For Windows, the Chromedriver can be installed using the following link:
 ````
 https://chromedriver.chromium.org/downloads
 ```` 
-Update the two to the latest if needed.
+4) Make sure Selenium is installed. To do so, just enter the following command:
+````
+pip install selenium
+````
+Make sure that Chromedriver version is compatible with the Selenium installed in computer
 
 
 
