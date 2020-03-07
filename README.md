@@ -23,7 +23,7 @@ For Windows, the Chromedriver can be installed using the following link:
 ````
 https://chromedriver.chromium.org/downloads
 ```` 
-4) Make sure Selenium is installed. To do so, just enter the following command:
+4) Make sure Selenium is installed. To install, just enter the following command:
 ````
 $ pip install selenium
 ````
@@ -34,7 +34,7 @@ Make sure that Chromedriver version is compatible with the Selenium installed in
 ````
 $ git clone https://github.com/markgat/MarsWebscrape.gits
 ````
-2) Look into the scrape_mars.py file, and make sure the executable path is set
+2) Look into the "scrape_mars.py" file, and make sure the executable path is set
 to where the Chromedriver is installed. By default, the path is set to where it is installed for Mac.
 ## Running
 
@@ -42,17 +42,17 @@ to where the Chromedriver is installed. By default, the path is set to where it 
 ````
 $ mongod
 ````
-2) Next, run the python program app.py.
+2) Next, run the python program "app.py".
 3) A url will be displayed from the returned results,
 ````
  Running on http://127.0.0.1:5000/
 ````
-Open link to startup web application locally on web browser
+Open link to startup web application locally on web browser 
 4) Lastly, press the "Scrape New Data" button to begin the scraping process,
 after which your Mars summary page will be displayed.
 ![web_results](Images/MarsWeb.png)
 5) To close program, close the web page, and shut off the mongo deamon and the terminal 
-containing the url by pressing ctr+C within each window.
+containing the url by pressing Ctr + C within each window.
 
 ## Coming Soon
 (30/01/2020) - Working on deploying on Heroku with updated ChromeDriver to make application web-deployed and more accessible.\
