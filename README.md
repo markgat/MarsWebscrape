@@ -46,7 +46,7 @@ $ mongod
 3) A url will be displayed from the returned results,
 ````
  Running on http://127.0.0.1:5000/
-```
+````
 Open link to startup web application locally on web browser
 4) Lastly, press the "Scrape New Data" button to begin the scraping process,
 after which your Mars summary page will be displayed.
