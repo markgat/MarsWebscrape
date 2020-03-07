@@ -51,7 +51,7 @@ Open link to startup web application locally on web browser.
 4) Lastly, press the "Scrape New Data" button to begin the scraping process,
 after which your Mars summary page will be displayed.
 ![web_results](Images/MarsWeb.png)
-5) To close program, close the web page, and shut off the mongo deamon and the terminal 
+5) To close program, close the web page, and shut off the MongoDB deamon and the terminal 
 containing the URL by pressing Ctr + C within each window.
 
 ## Coming Soon
