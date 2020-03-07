@@ -43,16 +43,16 @@ to where the Chromedriver is installed. By default, the path is set to where it 
 $ mongod
 ````
 2) Next, run the python program "app.py".
-3) A url will be displayed from the returned results,
+3) A URL will be displayed from the returned results,
 ````
  Running on http://127.0.0.1:5000/
 ````
-Open link to startup web application locally on web browser  
+Open link to startup web application locally on web browser.  
 4) Lastly, press the "Scrape New Data" button to begin the scraping process,
 after which your Mars summary page will be displayed.
 ![web_results](Images/MarsWeb.png)
 5) To close program, close the web page, and shut off the mongo deamon and the terminal 
-containing the url by pressing Ctr + C within each window.
+containing the URL by pressing Ctr + C within each window.
 
 ## Coming Soon
 (30/01/2020) - Working on deploying on Heroku with updated ChromeDriver to make application web-deployed and more accessible.\
