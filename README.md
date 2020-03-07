@@ -29,7 +29,7 @@ $ pip install selenium
 ````
 Make sure that Chromedriver version is compatible with the Selenium installed in computer.
 
-## Installing
+### Installing
 1) Git clone the repository to your local machine:
 ````
 $ git clone https://github.com/markgat/MarsWebscrape.gits
