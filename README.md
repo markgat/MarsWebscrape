@@ -52,7 +52,7 @@ Open link to startup web application locally on web browser.
 after which your Mars summary page will be displayed.
 ![web_results](Images/MarsWeb.png)
 5) To close program, close the web page, and shut off the MongoDB deamon and the terminal 
-containing the URL by pressing Ctr + C within each window.
+containing the URL by pressing Ctrl + C within each window.
 
 ## Coming Soon
 (30/01/2020) - Working on deploying on Heroku with updated ChromeDriver to make application web-deployed and more accessible.\
