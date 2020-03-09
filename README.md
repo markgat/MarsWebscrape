@@ -32,7 +32,7 @@ Make sure that Chromedriver version is compatible with the Selenium installed in
 ### Installing
 1) Git clone the repository to your local machine:
 ````
-$ git clone https://github.com/markgat/MarsWebscrape.gits
+$ git clone https://github.com/markgat/MarsWebscrape.git
 ````
 2) Look into the "scrape_mars.py" file, and make sure the executable path is set
 to where the Chromedriver is installed. By default, the path is set to where it is installed for Mac.
