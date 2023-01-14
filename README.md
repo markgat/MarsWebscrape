@@ -55,7 +55,6 @@ after which your Mars summary page will be displayed.
 containing the URL by pressing Ctrl + C within each window.
 
 ## Coming Soon
-(30/01/2020) - Working on deploying on Heroku with updated ChromeDriver to make application web-deployed and more accessible.\
 ~~(30/01/2020) - Improve beautiful soup scraping queries(?)~~
 ## Updates
 (05/02/2020) - Improved Twitter scrape by extending sleeping time for AJAX content to load. 
